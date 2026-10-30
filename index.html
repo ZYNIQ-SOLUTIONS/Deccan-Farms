@@ -1,0 +1,2573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Deccan Farms — Daily Fresh-Cut Vegetables, Fruits &amp; Salads | Pune</title>
+  <meta name="description" content="Deccan Farms is Pune's fresh-food atelier offering 3-stage ozone bio-washed, cold-cut vegetables, hand-peeled fruits, and artisanal salads delivered chilled to your doorstep." />
+  <meta name="theme-color" content="#0E2316" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Deccan Farms — Pune Fresh-Cut Produce Atelier" />
+  <meta property="og:description" content="3-Stage Ozone Washed, 18°C Cold-Cut Vegetables, Fruits &amp; Salads. Zero Prep, 100% Edible Weight, Pune-Wide Delivery." />
+  <meta property="og:site_name" content="Deccan Farms" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Mobile Web App & PWA Capabilities -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Deccan Farms" />
+
+  <!-- Favicon (DF Leaf & Sun Emblem) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23102F1B'/%3E%3Cpath d='M32 14c-9.9 0-18 8.1-18 18 0 7.8 5 14.4 12 16.8V32h12v16.8c7-2.4 12-9 12-16.8 0-9.9-8.1-18-18-18z' fill='%23FAF7F2' opacity='.3'/%3E%3Cpath d='M20 44c4-12 12-18 24-20-2 14-8 22-24 20z' fill='%234ADE80'/%3E%3Ccircle cx='42' cy='22' r='5' fill='%23C86D3B'/%3E%3C/svg%3E" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Deccan Farms",
+    "telephone": "+919876543210",
+    "servesCuisine": "Pre-Cut Vegetables, Fresh-Cut Fruits, Healthy Salad Bowls",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "areaServed": "Pune",
+    "priceRange": "₹₹",
+    "slogan": "We aren't simply selling cut fruits and vegetables — we're making it easier for people to eat fresh every day."
+  }
+  </script>
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Luxury Serif) + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       CLEAN, IMMERSIVE TIKTOK/REELS FULL-BLEED DESIGN SYSTEM
+       ========================================================================== */
+    :root {
+      --primary: #0E2316;         /* Brand Deep Deccan Forest */
+      --cream: #FAF7F2;           /* Brand Cream */
+      --accent: #E07A4F;          /* Terracotta / Saffron */
+      --wa: #25D366;              /* WhatsApp action green */
+      --gold: #D4AF37;
+      --green-neon: #34D399;
+
+      /* Per-slide dynamic color shifting */
+      --sec-bg: #0E2316;
+      --fg: var(--cream);
+      --accent-color: var(--accent);
+
+      /* Typography */
+      --f-display: 'Cormorant Garamond', Georgia, serif;
+      --f-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      /* Layout */
+      --hdr: 64px;
+      --dock-h: 68px;
+      --col: 520px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background: var(--sec-bg);
+      color: var(--fg);
+      font-family: var(--f-body);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overscroll-behavior: none;
+      transition: background 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    button {
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      touch-action: manipulation;
+    }
+
+    :focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 3px;
+      border-radius: 10px;
+    }
+
+    /* ---------- GLOBAL AMBIENT BACKDROP ---------- */
+    #bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background: var(--sec-bg);
+      transition: background 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      contain: strict;
+      transform: translateZ(0);
+    }
+    #bg .spotlight {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(70% 50% at 50% 36%, rgba(255, 255, 255, 0.08), transparent 75%);
+      pointer-events: none;
+    }
+
+    /* ---------- FEED (FULL-HEIGHT TIKTOK SNAP CONTAINER) ---------- */
+    #feed {
+      position: fixed;
+      inset: 0;
+      height: 100%;
+      height: 100dvh;
+      z-index: 2;
+      overflow-y: auto;
+      overflow-x: hidden;
+      scroll-snap-type: y mandatory;
+      overscroll-behavior-y: contain;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      will-change: scroll-position;
+    }
+    #feed::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* ---------- INDIVIDUAL FULLSCREEN SLIDE ---------- */
+    .slide {
+      position: relative;
+      height: 100%;
+      height: 100dvh;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Clean bottom-anchored content */
+      overflow: hidden;
+      contain: layout style paint;
+      color: var(--fg);
+    }
+
+    /* Full-Bleed Immersive Media Backdrop */
+    .slide-media {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+      pointer-events: auto;
+      cursor: pointer;
+    }
+
+    .slide-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 36%;
+      filter: brightness(0.88) contrast(1.04);
+      transform: scale(1.02);
+      transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+      will-change: transform;
+    }
+
+    .slide:hover .slide-media img {
+      transform: scale(1.06);
+    }
+
+    /* Seamless Cinematic Vignette */
+    .slide-media::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.08) 20%,
+        rgba(0, 0, 0, 0.12) 42%,
+        color-mix(in srgb, var(--sec-bg) 65%, transparent) 68%,
+        color-mix(in srgb, var(--sec-bg) 92%, #000) 86%,
+        var(--sec-bg) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* Clean Floating Stage Pill at Top */
+    .top-stage-pill {
+      position: absolute;
+      top: calc(env(safe-area-inset-top, 0px) + var(--hdr) + 14px);
+      left: max(18px, env(safe-area-inset-left, 0px));
+      z-index: 3;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(10, 24, 15, 0.55);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #FAF7F2;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+    .top-stage-pill .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #34D399;
+      box-shadow: 0 0 6px #34D399;
+    }
+
+    /* Clean Bottom Content Overlay */
+    .slide-info-overlay {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      max-width: var(--col);
+      margin-inline: auto;
+      padding: 0 max(20px, env(safe-area-inset-left, 0px)) calc(env(safe-area-inset-bottom, 0px) + var(--dock-h) + 48px);
+      padding-right: max(76px, calc(env(safe-area-inset-right, 0px) + 68px)); /* Room for TikTok action rail */
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+    }
+
+    .prod-kicker {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .prod-name {
+      font-family: var(--f-display);
+      font-weight: 700;
+      font-size: clamp(30px, 8vw, 42px);
+      line-height: 1.05;
+      letter-spacing: -0.015em;
+      margin: 0;
+      text-wrap: balance;
+      cursor: pointer;
+    }
+
+    .prod-sub {
+      font-size: 13.5px;
+      line-height: 1.45;
+      opacity: 0.9;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      max-width: 44ch;
+      cursor: pointer;
+    }
+
+    /* Minimalist Price & Pack Switcher Row */
+    .price-pack-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .price-display {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .current-price {
+      font-family: var(--f-display);
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+    .unit-label {
+      font-size: 12.5px;
+      opacity: 0.7;
+    }
+    .mrp-strike {
+      font-size: 13.5px;
+      opacity: 0.45;
+      text-decoration: line-through;
+    }
+
+    /* Sleek Frosted Pack Toggle */
+    .pack-toggle-group {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+    }
+    .pack-opt-btn {
+      padding: 5px 11px;
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.8);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .pack-opt-btn:hover {
+      color: #fff;
+    }
+    .pack-opt-btn.active {
+      background: #FAF7F2;
+      color: #102F1B;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    /* ---------- STICKY VERTICALLY-CENTERED TIKTOK ACTION RAIL ---------- */
+    .sticky-action-rail {
+      position: fixed;
+      right: max(14px, env(safe-area-inset-right, 0px));
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      z-index: 6;
+      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .sticky-action-rail.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-50%) translateX(24px);
+    }
+
+    .rail-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #FAF7F2;
+      transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .rail-btn:hover {
+      transform: scale(1.08);
+    }
+    .rail-btn:active {
+      transform: scale(0.92);
+    }
+
+    .rail-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+      position: relative;
+      transition: all 0.2s ease;
+    }
+    .rail-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* Primary Add-to-Bag Button */
+    .rail-btn.rail-add .rail-icon {
+      background: #FAF7F2;
+      color: #102F1B;
+      border-color: transparent;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4),
+                  0 0 0 3px rgba(250, 247, 242, 0.25);
+    }
+    .rail-btn.rail-add .rail-badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 5px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 10.5px;
+      font-weight: 800;
+      display: none;
+      place-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border: 1.5px solid #FAF7F2;
+    }
+    .rail-btn.rail-add.has-items .rail-badge {
+      display: grid;
+    }
+
+    /* WhatsApp Button in Rail */
+    .rail-btn.rail-wa .rail-icon {
+      background: #25D366;
+      color: #fff;
+      border-color: rgba(37, 211, 102, 0.4);
+    }
+
+    /* Like Button Active */
+    .rail-btn.rail-like.liked .rail-icon {
+      background: #EF4444;
+      color: #fff;
+      border-color: #EF4444;
+    }
+    .rail-btn.rail-like.liked svg {
+      fill: #fff;
+    }
+
+    /* ---------- SLIDE 0: INTRO SCREEN (EDITORIAL & IMMERSIVE) ---------- */
+    .slide.intro-slide {
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .intro-backdrop-media {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .intro-backdrop-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.42) saturate(1.2);
+      transform: scale(1.04);
+    }
+    .intro-backdrop-media::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 40%, rgba(14, 35, 22, 0.6) 0%, rgba(14, 35, 22, 0.95) 85%);
+    }
+
+    .intro-inner {
+      position: relative;
+      z-index: 3;
+      max-width: var(--col);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .intro-crest {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #2E7D47, #0F2E19);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5),
+                  inset 0 2px 4px rgba(255, 255, 255, 0.35);
+      position: relative;
+    }
+    .intro-crest svg.emblem {
+      width: 38px;
+      height: 38px;
+    }
+    .spinning-seal {
+      position: absolute;
+      inset: -14px;
+      animation: spinSeal 24s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes spinSeal {
+      to { transform: rotate(360deg); }
+    }
+
+    .intro-pill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #34D399;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .intro-headline {
+      font-family: var(--f-display);
+      font-size: clamp(34px, 8.5vw, 54px);
+      line-height: 1.05;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 4px 0;
+    }
+    .intro-headline em {
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .intro-caption {
+      font-size: 14.5px;
+      line-height: 1.6;
+      opacity: 0.88;
+      max-width: 42ch;
+    }
+
+    .intro-pillars-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      width: 100%;
+      margin-top: 6px;
+    }
+    .intro-pillar-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 12px 6px;
+      border-radius: 18px;
+      text-align: center;
+    }
+    .intro-pillar-card strong {
+      font-family: var(--f-display);
+      font-size: 22px;
+      color: #34D399;
+      display: block;
+      line-height: 1;
+    }
+    .intro-pillar-card span {
+      font-size: 10.5px;
+      opacity: 0.8;
+      margin-top: 4px;
+      display: block;
+      font-weight: 600;
+    }
+
+    .intro-swipe-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12.5px;
+      font-weight: 700;
+      opacity: 0.9;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .intro-swipe-cta .icon-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      display: grid;
+      place-items: center;
+      animation: nudgeDown 1.8s ease-in-out infinite;
+    }
+    @keyframes nudgeDown {
+      0%, 100% { transform: translateY(-3px); }
+      50% { transform: translateY(4px); }
+    }
+
+    /* ---------- SLIDES 10, 11, 12 (HYGIENE, STORY & B2B) ---------- */
+    .editorial-slide-box {
+      position: relative;
+      z-index: 3;
+      max-width: var(--col);
+      margin: auto;
+      padding: 0 max(20px, env(safe-area-inset-left, 0px)) calc(env(safe-area-inset-bottom, 0px) + var(--dock-h) + 48px);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* Shorter viewport protection to ensure zero overlap with dock */
+    @media (max-height: 740px) {
+      .slide-info-overlay {
+        gap: 5px;
+        padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--dock-h) + 40px);
+      }
+      .prod-name {
+        font-size: clamp(24px, 6.5vw, 32px);
+      }
+      .prod-sub {
+        -webkit-line-clamp: 1;
+        font-size: 12.5px;
+      }
+      .current-price {
+        font-size: 28px;
+      }
+      .editorial-slide-box {
+        gap: 8px;
+        padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--dock-h) + 40px);
+      }
+    }
+
+    /* ---------- TOP PROGRESS HEADER ---------- */
+    #top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      padding-top: env(safe-area-inset-top, 0px);
+      color: #FAF7F2;
+      pointer-events: none;
+    }
+    #top .top-inner {
+      max-width: var(--col);
+      margin: 0 auto;
+      padding: 8px max(16px, env(safe-area-inset-right, 0px)) 0 max(16px, env(safe-area-inset-left, 0px));
+    }
+
+    .story-segs-bar {
+      display: flex;
+      gap: 4px;
+      height: 22px;
+      align-items: center;
+      pointer-events: auto;
+    }
+    .story-seg {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+    }
+    .story-seg i {
+      display: block;
+      width: 100%;
+      height: 3px;
+      border-radius: 999px;
+      background: #FFFFFF;
+      opacity: 0.35;
+      transition: opacity 0.25s, transform 0.2s;
+    }
+    .story-seg:hover i {
+      opacity: 0.75;
+      transform: scaleY(1.4);
+    }
+    .story-seg.active i {
+      opacity: 1;
+      transform: scaleY(1.3);
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    }
+
+    .top-brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4px;
+      pointer-events: auto;
+    }
+    .brand-mark-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #FAF7F2;
+    }
+    .brand-mark-ico {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #34D399, #102F1B);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+    }
+    .brand-mark-ico svg {
+      width: 16px;
+      height: 16px;
+    }
+    .brand-mark-title {
+      font-family: var(--f-display);
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .pune-locality-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(14, 35, 22, 0.6);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #FAF7F2;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+    .pune-locality-pill select {
+      background: transparent;
+      border: none;
+      color: inherit;
+      font-family: inherit;
+      font-size: 11.5px;
+      font-weight: 700;
+      outline: none;
+      cursor: pointer;
+    }
+    .pune-locality-pill select option {
+      background: #102F1B;
+      color: #FAF7F2;
+    }
+
+    /* ---------- FLOATING BOTTOM DOCK ---------- */
+    #dock {
+      position: fixed;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0 max(12px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 10px) max(12px, env(safe-area-inset-left, 0px));
+      pointer-events: none;
+    }
+    #dock .dock-bar {
+      pointer-events: auto;
+      position: relative;
+      max-width: 480px;
+      margin: 0 auto;
+      height: var(--dock-h);
+      border-radius: 28px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: center;
+      color: var(--cream);
+      background: rgba(10, 24, 15, 0.85);
+      backdrop-filter: blur(24px) saturate(1.5);
+      -webkit-backdrop-filter: blur(24px) saturate(1.5);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6);
+    }
+
+    .dock-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      font-size: 10.5px;
+      font-weight: 700;
+      opacity: 0.82;
+      transition: all 0.2s ease;
+      padding: 6px 0;
+    }
+    .dock-btn:hover {
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+    .dock-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Central Elevated Fresh Bag Button */
+    .dock-center-slot {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 8px;
+    }
+    .dock-center-slot .center-lbl {
+      font-size: 10.5px;
+      font-weight: 800;
+      color: #FAF7F2;
+      white-space: nowrap;
+    }
+
+    #openBag {
+      position: absolute;
+      top: -24px;
+      left: 50%;
+      width: 64px;
+      height: 64px;
+      margin-left: -32px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #102F1B;
+      background: radial-gradient(circle at 30% 30%, #5EEAD4, #34D399 50%, #059669);
+      border: 3px solid rgba(10, 24, 15, 0.95);
+      box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.65),
+                  inset 0 2px 4px rgba(255, 255, 255, 0.6);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    #openBag:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 16px 32px -6px rgba(0, 0, 0, 0.7);
+    }
+    #openBag:active {
+      transform: scale(0.92);
+    }
+    #openBag svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    #openBag .bag-count-badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      min-width: 22px;
+      height: 22px;
+      padding: 0 6px;
+      border-radius: 999px;
+      display: none;
+      place-items: center;
+      background: var(--accent);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      border: 2px solid var(--cream);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transform: scale(0);
+      transition: transform 0.25s cubic-bezier(0.3, 1.5, 0.5, 1);
+    }
+    #openBag.has-items .bag-count-badge {
+      display: grid;
+      transform: scale(1);
+    }
+
+    /* ---------- SLIDEOUT BOTTOM SHEETS ---------- */
+    .scrim {
+      position: fixed;
+      inset: 0;
+      z-index: 7;
+      background: rgba(6, 15, 9, 0.68);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.32s ease;
+    }
+    .scrim.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .sheet {
+      position: fixed;
+      z-index: 8;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      max-width: var(--col);
+      max-height: 88%;
+      max-height: 88dvh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background: #FAF7F2;
+      color: #102F1B;
+      border-radius: 32px 32px 0 0;
+      transform: translateY(105%);
+      transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+      padding: 14px max(20px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 24px) max(20px, env(safe-area-inset-left, 0px));
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      box-shadow: 0 -14px 44px rgba(0, 0, 0, 0.4);
+    }
+    .sheet.active {
+      transform: none;
+    }
+
+    .sheet-handle-wrap {
+      padding: 4px 0 14px;
+      cursor: grab;
+      touch-action: none;
+    }
+    .sheet-handle {
+      width: 44px;
+      height: 5px;
+      border-radius: 3px;
+      background: currentColor;
+      opacity: 0.25;
+      margin: 0 auto;
+    }
+
+    .sheet-close-btn {
+      position: absolute;
+      right: 18px;
+      top: 18px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(16, 47, 27, 0.08);
+      color: #102F1B;
+      transition: all 0.2s ease;
+    }
+    .sheet-close-btn:hover {
+      background: rgba(16, 47, 27, 0.16);
+      transform: scale(1.06);
+    }
+    .sheet-close-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .sheet h3 {
+      font-family: var(--f-display);
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.15;
+      margin-bottom: 6px;
+    }
+    .sheet p.sub {
+      font-size: 13.5px;
+      color: #5A6B5E;
+      margin-bottom: 16px;
+    }
+
+    /* Catalog / Menu Sheet List */
+    .menu-filter-row {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(16, 47, 27, 0.1);
+    }
+    .menu-filter-row::-webkit-scrollbar { display: none; }
+    .m-pill {
+      flex: none;
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 700;
+      border: 1px solid rgba(16, 47, 27, 0.18);
+      background: transparent;
+      color: #102F1B;
+      transition: all 0.2s;
+    }
+    .m-pill.active {
+      background: #102F1B;
+      color: #FAF7F2;
+      border-color: #102F1B;
+    }
+
+    .menu-search-input {
+      width: 100%;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(16, 47, 27, 0.15);
+      background: #FFFFFF;
+      font-family: inherit;
+      font-size: 13.5px;
+      margin-bottom: 16px;
+      outline: none;
+    }
+    .menu-search-input:focus {
+      border-color: #102F1B;
+    }
+
+    .catalog-list {
+      display: grid;
+      gap: 12px;
+    }
+    .c-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(16, 47, 27, 0.08);
+      border-radius: 20px;
+      padding: 12px;
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 14px;
+      align-items: center;
+      box-shadow: 0 4px 14px rgba(16, 47, 27, 0.04);
+      transition: all 0.2s;
+    }
+    .c-card:hover {
+      border-color: rgba(16, 47, 27, 0.25);
+      transform: translateY(-2px);
+    }
+    .c-thumb {
+      width: 84px;
+      height: 84px;
+      border-radius: 14px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .c-title {
+      font-family: var(--f-display);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+    .c-cut {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin: 2px 0 4px;
+    }
+    .c-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 6px;
+    }
+    .c-price {
+      font-family: var(--f-display);
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .c-add-btn {
+      background: #102F1B;
+      color: #FAF7F2;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .c-add-btn:hover {
+      background: var(--accent);
+    }
+
+    /* Cart & Checkout Sheet */
+    .cart-items-list {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .cart-item-row {
+      background: #FFFFFF;
+      border: 1px solid rgba(16, 47, 27, 0.1);
+      border-radius: 18px;
+      padding: 12px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .cart-item-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .cart-item-thumb {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    .cart-item-name {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    .cart-item-meta {
+      font-size: 12px;
+      color: #5A6B5E;
+      margin-top: 2px;
+    }
+    .qty-stepper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #FAF7F2;
+      border: 1px solid rgba(16, 47, 27, 0.15);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+    .qty-btn {
+      font-size: 14px;
+      font-weight: 800;
+      color: #102F1B;
+      cursor: pointer;
+    }
+    .qty-num {
+      font-size: 13px;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .checkout-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .form-fld {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .form-fld label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #5A6B5E;
+    }
+    .form-fld input,
+    .form-fld select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(16, 47, 27, 0.15);
+      background: #FFFFFF;
+      font-family: inherit;
+      font-size: 13px;
+      color: #102F1B;
+      outline: none;
+    }
+
+    .btn-wa-order {
+      width: 100%;
+      background: #25D366;
+      color: #FFFFFF;
+      padding: 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .btn-wa-order:hover {
+      filter: brightness(1.08);
+      transform: translateY(-2px);
+    }
+
+    .btn-proto-checkout {
+      width: 100%;
+      background: #102F1B;
+      color: #FAF7F2;
+      padding: 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-proto-checkout:hover {
+      background: #1E5933;
+    }
+
+    /* ---------- DESKTOP SIDE ARROWS ---------- */
+    .desk-nav {
+      display: none;
+    }
+    @media (min-width: 860px) {
+      .desk-nav {
+        display: flex;
+        position: fixed;
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 6;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+      }
+      .desk-nav-btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: rgba(14, 35, 22, 0.7);
+        color: var(--cream);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        display: grid;
+        place-items: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        transition: all 0.2s;
+      }
+      .desk-nav-btn:hover {
+        transform: scale(1.1);
+        background: #102F1B;
+        border-color: #34D399;
+      }
+      .desk-nav-btn:disabled {
+        opacity: 0.25;
+        cursor: not-allowed;
+        transform: none;
+      }
+      .desk-nav-btn svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    /* ---------- TOAST NOTIFICATION ---------- */
+    .toast {
+      position: fixed;
+      bottom: calc(env(safe-area-inset-bottom, 0px) + var(--dock-h) + 16px);
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #102F1B;
+      color: #FAF7F2;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-weight: 700;
+      z-index: 100;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+      opacity: 0;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Floating Heart Burst */
+    .heart-burst {
+      position: fixed;
+      z-index: 20;
+      width: 70px;
+      height: 70px;
+      margin: -35px 0 0 -35px;
+      pointer-events: none;
+      animation: burstAnim 0.85s cubic-bezier(0.17, 0.89, 0.32, 1.2) forwards;
+    }
+    @keyframes burstAnim {
+      0% { transform: scale(0.2) rotate(-15deg); opacity: 0; }
+      20% { transform: scale(1.2) rotate(6deg); opacity: 1; }
+      80% { opacity: 1; }
+      100% { transform: scale(1.6) translateY(-40px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. DYNAMIC STAGE BACKGROUND -->
+  <div id="bg">
+    <div class="spotlight"></div>
+  </div>
+
+  <!-- 2. TOP FIXED HEADER & STORY SEGMENTS -->
+  <header id="top">
+    <div class="top-inner">
+      <!-- Story Segments Bar -->
+      <div class="story-segs-bar" id="storySegs" role="tablist" aria-label="Slide Stories">
+        <!-- Injected via JS based on slides count -->
+      </div>
+
+      <!-- Brand & Pune Delivery Selector -->
+      <div class="top-brand-row">
+        <a href="#" onclick="goToSlide(0); return false;" class="brand-mark-link">
+          <div class="brand-mark-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FAF7F2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="brand-mark-title">Deccan Farms</span>
+        </a>
+
+        <div class="pune-locality-pill" title="Select Pune Locality for Free Chilled Delivery">
+          <span>📍</span>
+          <select id="puneZoneSelect" onchange="onZoneChange(this.value)">
+            <option value="Koregaon Park">Koregaon Park</option>
+            <option value="Kalyani Nagar & Viman Nagar">Kalyani &amp; Viman</option>
+            <option value="Baner & Balewadi">Baner &amp; Balewadi</option>
+            <option value="Kothrud & Prabhat Road">Kothrud &amp; Prabhat</option>
+            <option value="Aundh & Pashan">Aundh &amp; Pashan</option>
+            <option value="Wakad & Hinjewadi">Wakad &amp; Hinjewadi</option>
+            <option value="Magarpatta & Kharadi">Magarpatta &amp; Kharadi</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. MAIN VERTICAL TIKTOK FEED (SNAP SCROLL) -->
+  <main id="feed" tabindex="0">
+
+    <!-- SLIDE 0: INTRO / HERITAGE -->
+    <section class="slide intro-slide" id="slide-0"
+             data-bg="#0E2316" data-fg="#FAF7F2" data-accent="#E07A4F">
+      <div class="intro-backdrop-media">
+        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=85" alt="Deccan Farms Pune" />
+      </div>
+
+      <div class="intro-inner">
+        <div class="intro-crest">
+          <svg viewBox="0 0 100 100" class="spinning-seal">
+            <defs>
+              <path id="sealPath" d="M 50, 50 m -38, 0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
+            </defs>
+            <text font-size="8.8" font-weight="800" letter-spacing="2.2" fill="#FAF7F2">
+              <textPath href="#sealPath">DECCAN FARMS PUNE • FRESH CUT DAILY •</textPath>
+            </text>
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FAF7F2" stroke-width="2" class="emblem">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+
+        <div class="intro-pill-tag">
+          <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#34D399;box-shadow:0 0 6px #34D399;"></span>
+          <span>5:00 AM Dawn Harvest • 18°C Cleanroom</span>
+        </div>
+
+        <h1 class="intro-headline">
+          We don’t simply sell cut veggies.<br />
+          We make eating <em>fresh effortless</em> every day.
+        </h1>
+
+        <p class="intro-caption">
+          Skip the peeling, plucking, and chopping. Sourced at dawn from partner farms, 3-stage ozone bio-washed, precision-cut, and delivered chilled to Pune kitchens.
+        </p>
+
+        <div class="intro-pillars-row">
+          <div class="intro-pillar-card">
+            <strong>45 Mins</strong>
+            <span>Prep Saved Daily</span>
+          </div>
+          <div class="intro-pillar-card">
+            <strong>99.9%</strong>
+            <span>Ozone Purity</span>
+          </div>
+          <div class="intro-pillar-card">
+            <strong>100%</strong>
+            <span>Edible Weight</span>
+          </div>
+        </div>
+
+        <div class="intro-swipe-cta" onclick="goToSlide(1)">
+          <span>Swipe Up to Explore Today's Cut</span>
+          <div class="icon-circle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDES 1 TO 9: THE 9 SIGNATURE PRODUCTS (INJECTED DYNAMICALLY VIA JS) -->
+
+  </main>
+
+  <!-- 4. STICKY VERTICALLY-CENTERED TIKTOK ACTION RAIL -->
+  <aside class="sticky-action-rail hidden" id="stickyActionRail" aria-label="Product Actions">
+    <!-- 1. Add to Bag -->
+    <button class="rail-btn rail-add" id="stickyAddBtn" onclick="onStickyAddClick(event)" title="Add to Fresh Bag">
+      <div class="rail-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+        <span class="rail-badge" id="stickyRailBadge">0</span>
+      </div>
+      <span>Bag</span>
+    </button>
+
+    <!-- 2. Customise / Specs -->
+    <button class="rail-btn" id="stickySpecsBtn" onclick="onStickySpecsClick()" title="Details &amp; Hygiene">
+      <div class="rail-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </div>
+      <span>Specs</span>
+    </button>
+
+    <!-- 3. WhatsApp Direct Chat -->
+    <button class="rail-btn rail-wa" id="stickyWaBtn" onclick="onStickyWaClick()" title="Order on WhatsApp">
+      <div class="rail-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </div>
+      <span>Chat</span>
+    </button>
+
+    <!-- 4. Like / Favorite -->
+    <button class="rail-btn rail-like" id="stickyLikeBtn" onclick="onStickyLikeClick(event)" title="Save to favorites">
+      <div class="rail-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <span id="stickyLikeCnt">142</span>
+    </button>
+  </aside>
+
+  <!-- 5. DESKTOP SIDE CONTROLS -->
+  <div class="desk-nav">
+    <button class="desk-nav-btn" id="prevSlideBtn" onclick="prevSlide()" title="Previous Screen (Up Arrow)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+    <button class="desk-nav-btn" id="nextSlideBtn" onclick="nextSlide()" title="Next Screen (Down Arrow)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+  </div>
+
+  <!-- 5. FLOATING GLASS BOTTOM DOCK -->
+  <div id="dock">
+    <nav class="dock-bar">
+      <!-- 1. Home -->
+      <button class="dock-btn" onclick="goToSlide(0)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        </svg>
+        <span>Home</span>
+      </button>
+
+      <!-- 2. Menu Catalog Sheet -->
+      <button class="dock-btn" onclick="openMenuSheet()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+          <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+        </svg>
+        <span>Catalog</span>
+      </button>
+
+      <!-- 3. Central Elevated "Fresh Bag" -->
+      <div class="dock-center-slot">
+        <button id="openBag" onclick="openBagSheet()" title="View Fresh Bag &amp; Checkout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#102F1B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="bag-count-badge" id="dockBagCount">0</span>
+        </button>
+        <span class="center-lbl">Fresh Bag</span>
+      </div>
+
+      <!-- 4. Ozone Hygiene Protocol Slide -->
+      <button class="dock-btn" onclick="goToSlide(10)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <span>Protocol</span>
+      </button>
+
+      <!-- 5. WhatsApp Direct Concierge -->
+      <button class="dock-btn" onclick="openWhatsAppConcierge()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- 6. SLIDEOUT BOTTOM SHEETS -->
+  <div class="scrim" id="scrim" onclick="closeAllSheets()"></div>
+
+  <!-- A. CATALOG / MENU SHEET -->
+  <aside class="sheet" id="menuSheet" role="dialog" aria-modal="true">
+    <div class="sheet-handle-wrap" onclick="closeMenuSheet()">
+      <div class="sheet-handle"></div>
+    </div>
+    <button class="sheet-close-btn" onclick="closeMenuSheet()" aria-label="Close Catalog">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <h3>The Daily Cut Catalog</h3>
+    <p class="sub">Filter today's 5:00 AM harvest or jump straight to any product screen.</p>
+
+    <div class="menu-filter-row">
+      <button class="m-pill active" onclick="filterMenu('all', this)">All Harvest (9)</button>
+      <button class="m-pill" onclick="filterMenu('veggies', this)">Pre-Cut Vegetables</button>
+      <button class="m-pill" onclick="filterMenu('fruits', this)">Fresh-Cut Fruits</button>
+      <button class="m-pill" onclick="filterMenu('salads', this)">Artisanal Bowls</button>
+    </div>
+
+    <input type="text" class="menu-search-input" id="menuSearchInput" placeholder="Search pomegranate, methi, wok stir-fry..." oninput="searchCatalog(this.value)" />
+
+    <div class="catalog-list" id="catalogSheetList">
+      <!-- Injected by JS -->
+    </div>
+  </aside>
+
+  <!-- B. PRODUCT DETAIL & CUSTOMISATION SHEET -->
+  <aside class="sheet" id="addSheet" role="dialog" aria-modal="true">
+    <div class="sheet-handle-wrap" onclick="closeAddSheet()">
+      <div class="sheet-handle"></div>
+    </div>
+    <button class="sheet-close-btn" onclick="closeAddSheet()" aria-label="Close Customiser">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <div style="display:flex;gap:14px;align-items:center;margin-bottom:14px;">
+      <img id="detailImg" src="" alt="" style="width:72px;height:72px;border-radius:16px;object-fit:cover;" />
+      <div>
+        <div id="detailCut" style="font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;"></div>
+        <h3 id="detailTitle" style="font-size:22px;margin:2px 0;"></h3>
+        <div id="detailPrice" style="font-family:var(--f-display);font-size:20px;font-weight:700;"></div>
+      </div>
+    </div>
+
+    <p id="detailDesc" style="font-size:13.5px;color:#5A6B5E;margin-bottom:18px;line-height:1.5;"></p>
+
+    <div style="background:rgba(16,47,27,0.06);padding:14px;border-radius:18px;margin-bottom:18px;font-size:12.5px;display:grid;gap:6px;">
+      <div><strong>💧 Hygiene:</strong> 3-Stage RO + Ozone Bio-Wash (0% Chemicals)</div>
+      <div><strong>❄️ Cleanroom:</strong> Cold-cut at 18°C using medical-grade SS316 blades</div>
+      <div><strong>📦 Punnet:</strong> Breathable micro-punnet (4 days crisp fridge life)</div>
+    </div>
+
+    <div style="margin-bottom:16px;">
+      <label style="display:block;font-size:12px;font-weight:700;margin-bottom:8px;">Choose Pack Size:</label>
+      <div class="pack-chips" id="sheetPackChips" style="display:flex;gap:8px;">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+      <span style="font-size:13px;font-weight:700;">Quantity:</span>
+      <div class="qty-stepper">
+        <button class="qty-btn" onclick="adjustSheetQty(-1)">−</button>
+        <span class="qty-num" id="sheetQtyVal">1</span>
+        <button class="qty-btn" onclick="adjustSheetQty(1)">+</button>
+      </div>
+    </div>
+
+    <button class="btn-proto-checkout" id="sheetAddConfirmBtn" style="background:#102F1B;padding:16px;font-size:15px;display:flex;align-items:center;justify-content:center;gap:10px;">
+      <span>+ Add to Fresh Bag</span>
+    </button>
+  </aside>
+
+  <!-- C. FRESH BAG / CHECKOUT SHEET -->
+  <aside class="sheet" id="bagSheet" role="dialog" aria-modal="true">
+    <div class="sheet-handle-wrap" onclick="closeBagSheet()">
+      <div class="sheet-handle"></div>
+    </div>
+    <button class="sheet-close-btn" onclick="closeBagSheet()" aria-label="Close Bag">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <h3>Your Fresh Bag</h3>
+    <p class="sub">Chilled, insulated delivery across Pune.</p>
+
+    <div class="cart-items-list" id="bagItemsContainer">
+      <!-- Injected by JS -->
+    </div>
+
+    <div id="checkoutControls" style="display:none;">
+      <div class="checkout-form-grid">
+        <div class="form-fld">
+          <label>Pune Locality</label>
+          <select id="bagLocalityInput">
+            <option value="Koregaon Park">Koregaon Park</option>
+            <option value="Kalyani Nagar & Viman Nagar">Kalyani &amp; Viman</option>
+            <option value="Baner & Balewadi">Baner &amp; Balewadi</option>
+            <option value="Kothrud & Prabhat Road">Kothrud &amp; Prabhat</option>
+            <option value="Aundh & Pashan">Aundh &amp; Pashan</option>
+            <option value="Wakad & Hinjewadi">Wakad &amp; Hinjewadi</option>
+            <option value="Magarpatta & Kharadi">Magarpatta &amp; Kharadi</option>
+          </select>
+        </div>
+        <div class="form-fld">
+          <label>Chilled Slot</label>
+          <select id="bagSlotInput">
+            <option>Today Evening (5 PM - 7 PM)</option>
+            <option>Tomorrow Morning (7 AM - 9 AM)</option>
+          </select>
+        </div>
+        <div class="form-fld">
+          <label>Your Name</label>
+          <input type="text" id="bagCustName" placeholder="For punnet label" />
+        </div>
+        <div class="form-fld">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" id="bagCustPhone" placeholder="+91 98765 43210" />
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-top:1px solid rgba(16,47,27,0.1);margin-bottom:12px;">
+        <span style="font-size:13.5px;color:#5A6B5E;">Free Chilled Delivery Across Pune</span>
+        <strong id="bagGrandTotal" style="font-family:var(--f-display);font-size:30px;color:#102F1B;">₹0</strong>
+      </div>
+
+      <button class="btn-wa-order" onclick="submitOrderWhatsApp()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>Complete Order on WhatsApp</span>
+      </button>
+
+      <button class="btn-proto-checkout" onclick="submitPrototypeOrder()">
+        <span>Instant Online Checkout (Prototype)</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- D. INFO & FAQ SHEET -->
+  <aside class="sheet" id="infoSheet" role="dialog" aria-modal="true">
+    <div class="sheet-handle-wrap" onclick="closeInfoSheet()">
+      <div class="sheet-handle"></div>
+    </div>
+    <button class="sheet-close-btn" onclick="closeInfoSheet()" aria-label="Close Info">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <h3>Hygiene &amp; Cleanroom FAQ</h3>
+    <p class="sub">How Deccan Farms ensures 100% pure, unadulterated freshness.</p>
+
+    <div style="display:grid;gap:12px;">
+      <div style="background:#FFFFFF;border:1px solid rgba(16,47,27,0.1);padding:14px;border-radius:18px;">
+        <h4 style="font-size:14.5px;margin-bottom:6px;">How long do pre-cut veggies and salads stay fresh?</h4>
+        <p style="font-size:13px;color:#5A6B5E;line-height:1.5;">Because we wash in ozonated RO water and cold-cut at 18°C, our pre-cut vegetables stay crisp for 3–4 days and fresh fruit/salad bowls for 48 hours when refrigerated at 4°C.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid rgba(16,47,27,0.1);padding:14px;border-radius:18px;">
+        <h4 style="font-size:14.5px;margin-bottom:6px;">Do you add chemical dips, preservatives or sulfites?</h4>
+        <p style="font-size:13px;color:#5A6B5E;line-height:1.5;">Zero. We never use chlorine, sulfite dips, or artificial citrates. Freshness is preserved purely through ozone oxidation, moisture spin drying, and breathable barrier punnets.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid rgba(16,47,27,0.1);padding:14px;border-radius:18px;">
+        <h4 style="font-size:14.5px;margin-bottom:6px;">How do delivery slots work in Pune?</h4>
+        <p style="font-size:13px;color:#5A6B5E;line-height:1.5;">We run two dedicated chilled temperature-controlled delivery vans across Pune every single day: Morning (7 AM – 9 AM) and Evening (5 PM – 7 PM).</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 7. TOAST -->
+  <div class="toast" id="toast">Added to Fresh Bag</div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT APPLICATION ENGINE
+       ========================================================================== -->
+  <script>
+    // 1. PRODUCT CATALOG DATA FOR DECCAN FARMS PUNE
+    const PRODUCTS = [
+      {
+        id: 1,
+        name: "Ruby Bhagwa Pomegranate Arils",
+        cat: "fruits",
+        kicker: "FRESH-CUT FRUITS",
+        price: 95,
+        cut: "Hand-Peeled Intact Arils",
+        badge: "Bestseller in Pune",
+        timeSaved: "Saves 20 Mins",
+        desc: "Zero bitter pith, zero red-stained fingers. Sweet, ruby-red Solapur Bhagwa pomegranate arils hygienically peeled and chilled.",
+        img: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1200&q=85",
+        bg: "#2A080F",
+        fg: "#FCEAEB",
+        accent: "#F43F5E",
+        facts: ["Triple Ozone Bio-Wash", "Zero Bitter Pith", "Heart & Antioxidant Rich"]
+      },
+      {
+        id: 2,
+        name: "Cleaned & Plucked Gavran Methi",
+        cat: "veggies",
+        kicker: "PRE-CUT VEGETABLES",
+        price: 48,
+        cut: "Tender Leaves Only • Triple Washed",
+        badge: "Zero Mud / Zero Stems",
+        timeSaved: "Saves 25 Mins",
+        desc: "Sorted leaf-by-leaf from fresh Mulshi harvest. Triple-washed in ozonated water to remove all soil and grit—ready straight for your kadhai.",
+        img: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=1200&q=85",
+        bg: "#0A2012",
+        fg: "#E8F5E9",
+        accent: "#4ADE80",
+        facts: ["100% Edible Net Weight", "No Plucking Needed", "Rich in Iron & Folate"]
+      },
+      {
+        id: 3,
+        name: "Asian Edamame & Quinoa Bowl",
+        cat: "salads",
+        kicker: "ARTISANAL SALAD BOWLS",
+        price: 185,
+        cut: "18g Plant Protein • Sesame Ginger Dressing",
+        badge: "Chef's Macro Bowl",
+        timeSaved: "Ready Meal",
+        desc: "Crisp purple cabbage, steamed edamame, organic quinoa, bell peppers, and roasted crushed peanuts with cold-pressed sesame ginger dressing.",
+        img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85",
+        bg: "#22160C",
+        fg: "#F9EBE0",
+        accent: "#F59E0B",
+        facts: ["18g Plant Protein", "Cold-Pressed Dressing", "Zero Preservatives"]
+      },
+      {
+        id: 4,
+        name: "Exotic Wok Stir-Fry Medley",
+        cat: "veggies",
+        kicker: "PRE-CUT VEGETABLES",
+        price: 110,
+        cut: "Broccoli, Yellow Zucchini & Bell Peppers",
+        badge: "Uniform Florets & Batons",
+        timeSaved: "Saves 20 Mins",
+        desc: "Crisp broccoli florets, yellow and green zucchini batons, baby corn, and sweet red peppers cut for even 4-minute wok tossing.",
+        img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=85",
+        bg: "#0D2214",
+        fg: "#ECFDF5",
+        accent: "#10B981",
+        facts: ["18°C Cleanroom Cut", "No Slicing Required", "Fiber & Vitamin C Packed"]
+      },
+      {
+        id: 5,
+        name: "Sun-Ripened Papaya & Pineapple",
+        cat: "fruits",
+        kicker: "FRESH-CUT FRUITS",
+        price: 85,
+        cut: "1-Inch Bite Cubes • Naturally Ripened",
+        badge: "Morning Gut Reset",
+        timeSaved: "Saves 15 Mins",
+        desc: "Carbide-free sweet Taiwan papaya paired with juicy Rani pineapple cubes. Peeled, deseeded, and chilled.",
+        img: "https://images.unsplash.com/photo-1490885578174-acda8905c2c6?auto=format&fit=crop&w=1200&q=85",
+        bg: "#2B1609",
+        fg: "#FFF0E0",
+        accent: "#FB923C",
+        facts: ["Naturally Ripened", "Zero Added Sugar", "Digestive Enzymes"]
+      },
+      {
+        id: 6,
+        name: "Mediterranean Chickpea & Feta",
+        cat: "salads",
+        kicker: "ARTISANAL SALAD BOWLS",
+        price: 175,
+        cut: "High Fiber • Lemon Oregano Vinaigrette",
+        badge: "Light & Refreshing",
+        timeSaved: "Ready Meal",
+        desc: "Diced English cucumber, cherry tomatoes, Kalamata olives, protein-rich chickpeas, crisp romaine, and Greek feta crumbles.",
+        img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=85",
+        bg: "#131C22",
+        fg: "#E6F0F6",
+        accent: "#38BDF8",
+        facts: ["Greek Feta Crumbles", "High Dietary Fiber", "Includes Dressing Pot"]
+      },
+      {
+        id: 7,
+        name: "Pav Bhaji & Sambar Diced Mix",
+        cat: "veggies",
+        kicker: "PRE-CUT VEGETABLES",
+        price: 65,
+        cut: "Cauliflower, Carrot, Green Peas & Beans",
+        badge: "Weeknight Dinner Hack",
+        timeSaved: "Saves 20 Mins",
+        desc: "Precision-diced vegetables ready to go straight into your pressure cooker—no peeling or chopping board needed.",
+        img: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=1200&q=85",
+        bg: "#25120B",
+        fg: "#FDF2E9",
+        accent: "#EA580C",
+        facts: ["Pressure-Cooker Ready", "Zero Peel Waste", "4-Farm Veggie Blend"]
+      },
+      {
+        id: 8,
+        name: "Chilled Kiran Watermelon & Mint",
+        cat: "fruits",
+        kicker: "FRESH-CUT FRUITS",
+        price: 60,
+        cut: "Crisp Cubes + Fresh Farm Mint Sprig",
+        badge: "Hydration Punnet",
+        timeSaved: "Saves 15 Mins",
+        desc: "Deep-red, sweet Kiran watermelon cut into neat bite-sized cubes with fresh mint leaves.",
+        img: "https://images.unsplash.com/photo-1563114773-84221bd62daa?auto=format&fit=crop&w=1200&q=85",
+        bg: "#240A12",
+        fg: "#FCE7F3",
+        accent: "#FB7185",
+        facts: ["Electrolyte Rich", "Seedless Cut", "Ultra-Hydrating"]
+      },
+      {
+        id: 9,
+        name: "Peeled Gavran Garlic (Lasun)",
+        cat: "veggies",
+        kicker: "PRE-CUT VEGETABLES",
+        price: 55,
+        cut: "Whole Unblemished Cloves • Zero Bleach",
+        badge: "Kitchen Essential",
+        timeSaved: "Saves 30 Mins",
+        desc: "Aromatic, pungent local garlic cloves peeled gently without bruising so they stay fresh for a full week.",
+        img: "https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?auto=format&fit=crop&w=1200&q=85",
+        bg: "#121F15",
+        fg: "#F5F7F2",
+        accent: "#A3E635",
+        facts: ["Peeled Without Bruising", "Zero Chemical Bleach", "7-Day Crisp Shelf Life"]
+      }
+    ];
+
+    // 2. STATE MANAGEMENT
+    let currentSlideIndex = 0;
+    let currentActiveProductId = null;
+    let selectedPackPerProduct = {}; // { [prodId]: { label: '250g', mult: 1 } }
+    let freshBag = []; // [ { key, id, name, pack, price, qty, img } ]
+    let likedProducts = {}; // { [prodId]: true }
+    let activeCatalogCat = 'all';
+
+    // Total slides: Slide 0 (Intro) + 9 Products + Slide 10 (Protocol) + Slide 11 (Time Calc) + Slide 12 (Concierge) = 13 slides
+    const TOTAL_SLIDES = 1 + PRODUCTS.length + 3;
+
+    // 3. INITIALIZATION & RENDERING
+    function init() {
+      renderFeedProductSlides();
+      renderStorySegments();
+      renderCatalogSheet();
+      setupIntersectionObserver();
+      setupKeyboardNav();
+      updateBagBadge();
+    }
+
+    // Render product slides into #feed (Clean, Immersive full-bleed layout)
+    function renderFeedProductSlides() {
+      const feed = document.getElementById('feed');
+
+      const productSlidesHtml = PRODUCTS.map((p, index) => {
+        const slideIdx = index + 1;
+        const sel = selectedPackPerProduct[p.id] || { label: '250g', mult: 1 };
+        const price = Math.round(p.price * sel.mult);
+        const mrp = Math.round(price * 1.2);
+
+        return `
+          <section class="slide product-slide" id="slide-${slideIdx}"
+                   data-bg="${p.bg}" data-fg="${p.fg}" data-accent="${p.accent}"
+                   data-prod-id="${p.id}">
+
+            <!-- 1. FULL-BLEED IMMERSIVE MEDIA LAYER -->
+            <div class="slide-media" onclick="openAddSheet(${p.id})">
+              <img src="${p.img}" alt="${p.name}" loading="lazy" />
+            </div>
+
+            <!-- 2. TOP DISCREET BADGE PILL -->
+            <div class="top-stage-pill">
+              <span class="dot"></span>
+              <span>${p.badge} • ⏱ ${p.timeSaved}</span>
+            </div>
+
+            <!-- 3. CLEAN BOTTOM INFO OVERLAY -->
+            <div class="slide-info-overlay">
+              <div class="prod-kicker">
+                <span>${p.kicker} • ${p.cut}</span>
+              </div>
+
+              <h2 class="prod-name" onclick="openAddSheet(${p.id})">${p.name}</h2>
+
+              <p class="prod-sub" onclick="openAddSheet(${p.id})">
+                ${p.desc}
+              </p>
+
+              <!-- Price & Pack Toggle Bar -->
+              <div class="price-pack-bar">
+                <div class="price-display">
+                  <span class="current-price" id="price-val-${p.id}">₹${price}</span>
+                  <span class="unit-label" id="unit-val-${p.id}">/ ${sel.label}</span>
+                  <span class="mrp-strike" id="mrp-val-${p.id}">₹${mrp}</span>
+                </div>
+
+                <div class="pack-toggle-group">
+                  <button class="pack-opt-btn ${sel.label==='250g'?'active':''}" onclick="setProductPack(${p.id}, '250g', 1, event)">250g</button>
+                  <button class="pack-opt-btn ${sel.label==='500g'?'active':''}" onclick="setProductPack(${p.id}, '500g', 1.85, event)">500g</button>
+                  <button class="pack-opt-btn ${sel.label==='1kg'?'active':''}" onclick="setProductPack(${p.id}, '1kg', 3.5, event)">1kg</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        `;
+      }).join('');
+
+      // Slide 10: Ozone Protocol (Clean Editorial)
+      const protocolSlideHtml = `
+        <section class="slide" id="slide-10"
+                 data-bg="#071910" data-fg="#E6FBF2" data-accent="#34D399">
+          <div class="slide-media">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80" alt="Cleanroom" />
+          </div>
+          <div class="editorial-slide-box">
+            <div class="prod-kicker">
+              <span>UNCOMPROMISING CLEANROOM STANDARDS</span>
+            </div>
+            <h2 class="prod-name">4-Step Ozone Hygiene Protocol</h2>
+            <p style="font-size:14px;opacity:0.9;line-height:1.5;">
+              Why leading doctors, fitness trainers, and busy Pune families trust our cold-cut produce every day.
+            </p>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:4px 0 8px;">
+              <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.18);padding:14px;border-radius:18px;">
+                <span style="font-family:var(--f-display);font-size:24px;color:#34D399;font-weight:700;">01.</span>
+                <div style="font-weight:700;font-size:13.5px;margin:2px 0;">Dawn Sourcing</div>
+                <p style="font-size:11.5px;opacity:0.8;">Procured from Mulshi &amp; Satara within 6 hrs of harvest.</p>
+              </div>
+              <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.18);padding:14px;border-radius:18px;">
+                <span style="font-family:var(--f-display);font-size:24px;color:#34D399;font-weight:700;">02.</span>
+                <div style="font-weight:700;font-size:13.5px;margin:2px 0;">3-Stage Ozone Wash</div>
+                <p style="font-size:11.5px;opacity:0.8;">Neutralizes 99.9% of surface pesticides &amp; bacteria.</p>
+              </div>
+              <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.18);padding:14px;border-radius:18px;">
+                <span style="font-family:var(--f-display);font-size:24px;color:#34D399;font-weight:700;">03.</span>
+                <div style="font-weight:700;font-size:13.5px;margin:2px 0;">18°C Cleanroom Cut</div>
+                <p style="font-size:11.5px;opacity:0.8;">Medical SS316 blades prevent cellular bruising.</p>
+              </div>
+              <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.18);padding:14px;border-radius:18px;">
+                <span style="font-family:var(--f-display);font-size:24px;color:#34D399;font-weight:700;">04.</span>
+                <div style="font-weight:700;font-size:13.5px;margin:2px 0;">Breathable Punnets</div>
+                <p style="font-size:11.5px;opacity:0.8;">BPA-free punnets retain crisp crunch for 4 days.</p>
+              </div>
+            </div>
+
+            <button onclick="openInfoSheet()" style="align-self:flex-start;background:rgba(52,211,153,0.2);color:#34D399;border:1px solid rgba(52,211,153,0.4);padding:10px 20px;border-radius:999px;font-size:13px;font-weight:700;">
+              Read Lab Certification &amp; FAQs →
+            </button>
+          </div>
+        </section>
+      `;
+
+      // Slide 11: Time Calculator & Pune Story
+      const timeSlideHtml = `
+        <section class="slide" id="slide-11"
+                 data-bg="#162017" data-fg="#FDF9F0" data-accent="#D4AF37">
+          <div class="slide-media">
+            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1200&q=80" alt="Kitchen Prep" />
+          </div>
+          <div class="editorial-slide-box">
+            <div class="prod-kicker">
+              <span>EFFORTLESS FRESH LIVING</span>
+            </div>
+            <h2 class="prod-name">Reclaim Your Evenings</h2>
+            <p style="font-size:14px;opacity:0.9;line-height:1.5;">
+              Built for Pune’s fast-paced tech corridors in Hinjewadi, Kharadi, and Kalyani Nagar. You only pay for 100% edible weight—zero peel waste, zero prep exhaustion.
+            </p>
+
+            <div style="background:rgba(255,255,255,0.09);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.2);border-radius:22px;padding:18px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;">Weekly Prep Calculator</span>
+                <span id="slideMealCountLabel" style="font-weight:700;font-size:13px;">10 Home Meals / Week</span>
+              </div>
+              <input type="range" min="3" max="21" value="10" style="width:100%;height:8px;border-radius:999px;background:rgba(255,255,255,0.2);accent-color:#34D399;margin:14px 0 10px;cursor:pointer;" oninput="updateTimeSlider(this.value)" />
+              <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                <span style="font-size:12.5px;opacity:0.8;">Chopping &amp; cleaning saved:</span>
+                <strong id="slideHoursSavedLabel" style="font-family:var(--f-display);font-size:26px;color:#34D399;">6.5 Hours / wk</strong>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:12px;margin-top:6px;">
+              <button onclick="goToSlide(1)" style="flex:1;background:#34D399;color:#102F1B;padding:14px;border-radius:999px;font-weight:800;font-size:13.5px;">
+                Shop Today's Cut
+              </button>
+              <button onclick="openBagSheet()" style="flex:1;background:rgba(255,255,255,0.14);color:#FAF7F2;border:1px solid rgba(255,255,255,0.22);padding:14px;border-radius:999px;font-weight:700;font-size:13.5px;">
+                View Fresh Bag
+              </button>
+            </div>
+          </div>
+        </section>
+      `;
+
+      // Slide 12: Bulk & Corporate Concierge
+      const conciergeSlideHtml = `
+        <section class="slide" id="slide-12"
+                 data-bg="#091A10" data-fg="#E8F5EB" data-accent="#22C55E">
+          <div class="slide-media">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80" alt="Corporate salad" />
+          </div>
+          <div class="editorial-slide-box">
+            <div class="prod-kicker">
+              <span>PUNE CONCIERGE &amp; B2B PARTNERSHIPS</span>
+            </div>
+            <h2 class="prod-name">Corporate Salads &amp; Bulk Supply</h2>
+            <p style="font-size:14px;opacity:0.9;line-height:1.5;">
+              Supplying corporate campuses, wellness studios, cloud kitchens, and private dining events with fresh-cut, ready-to-toss produce every morning across Pune.
+            </p>
+
+            <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.18);border-radius:20px;padding:16px;display:grid;gap:10px;">
+              <div style="font-weight:700;font-size:13.5px;">✦ Employee Daily Salad Bowls (Hinjewadi &amp; Viman Nagar)</div>
+              <div style="font-weight:700;font-size:13.5px;">✦ HORECA Bulk Pre-Cut Garlic, Onion &amp; Methi</div>
+              <div style="font-weight:700;font-size:13.5px;">✦ Custom Weekly Family Meal Subscriptions</div>
+            </div>
+
+            <button onclick="openWhatsAppConcierge('Hi Deccan Farms! I am interested in Corporate Salad / Bulk pre-cut supply in Pune.')"
+                    style="background:#25D366;color:#fff;padding:16px;border-radius:999px;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 10px 24px rgba(37,211,102,0.3);margin-top:6px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              <span>Connect on WhatsApp VIP Concierge</span>
+            </button>
+          </div>
+        </section>
+      `;
+
+      feed.insertAdjacentHTML('beforeend', productSlidesHtml + protocolSlideHtml + timeSlideHtml + conciergeSlideHtml);
+    }
+
+    // Render Segmented Story Progress Bar
+    function renderStorySegments() {
+      const segsContainer = document.getElementById('storySegs');
+      let html = '';
+      for (let i = 0; i < TOTAL_SLIDES; i++) {
+        html += `<button class="story-seg ${i===0?'active':''}" id="seg-${i}" onclick="goToSlide(${i})" title="Screen ${i+1}"><i></i></button>`;
+      }
+      segsContainer.innerHTML = html;
+    }
+
+    // IntersectionObserver to sync active slide, background color morphing, and segment bar
+    function setupIntersectionObserver() {
+      const feed = document.getElementById('feed');
+      const slides = document.querySelectorAll('.slide');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            const slide = entry.target;
+            const slideId = slide.id;
+            const idx = parseInt(slideId.replace('slide-', ''), 10);
+            setActiveSlide(idx, slide);
+          }
+        });
+      }, {
+        root: feed,
+        threshold: 0.55
+      });
+
+      slides.forEach(s => observer.observe(s));
+    }
+
+    function setActiveSlide(idx, slideEl) {
+      currentSlideIndex = idx;
+
+      // Update story segments
+      document.querySelectorAll('.story-seg').forEach((s, i) => {
+        s.classList.toggle('active', i === idx);
+      });
+
+      // Update desktop buttons state
+      const prevBtn = document.getElementById('prevSlideBtn');
+      const nextBtn = document.getElementById('nextSlideBtn');
+      if (prevBtn) prevBtn.disabled = idx === 0;
+      if (nextBtn) nextBtn.disabled = idx === TOTAL_SLIDES - 1;
+
+      // Color morphing on #bg and body
+      const bg = slideEl.getAttribute('data-bg') || '#0E2316';
+      const fg = slideEl.getAttribute('data-fg') || '#FAF7F2';
+      const accent = slideEl.getAttribute('data-accent') || '#E07A4F';
+
+      const root = document.documentElement;
+      root.style.setProperty('--sec-bg', bg);
+      root.style.setProperty('--fg', fg);
+      root.style.setProperty('--accent-color', accent);
+
+      // Dynamically update and sync Sticky Action Rail
+      const rail = document.getElementById('stickyActionRail');
+      if (idx >= 1 && idx <= PRODUCTS.length) {
+        currentActiveProductId = PRODUCTS[idx - 1].id;
+        if (rail) rail.classList.remove('hidden');
+        updateStickyRailState();
+      } else {
+        currentActiveProductId = null;
+        if (rail) rail.classList.add('hidden');
+      }
+    }
+
+    function goToSlide(idx) {
+      if (idx < 0 || idx >= TOTAL_SLIDES) return;
+      const target = document.getElementById(`slide-${idx}`);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlideIndex < TOTAL_SLIDES - 1) {
+        goToSlide(currentSlideIndex + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlideIndex > 0) {
+        goToSlide(currentSlideIndex - 1);
+      }
+    }
+
+    function setupKeyboardNav() {
+      window.addEventListener('keydown', (e) => {
+        if (document.querySelector('.sheet.active')) return;
+
+        if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ' || e.key === 'j') {
+          e.preventDefault();
+          nextSlide();
+        } else if (e.key === 'ArrowUp' || e.key === 'PageUp' || e.key === 'k') {
+          e.preventDefault();
+          prevSlide();
+        }
+      });
+    }
+
+    // 4. PRODUCT CUSTOMISATION & PACK SWITCHING
+    function setProductPack(prodId, label, mult, event) {
+      if (event) event.stopPropagation();
+      selectedPackPerProduct[prodId] = { label, mult };
+
+      const p = PRODUCTS.find(x => x.id === prodId);
+      if (!p) return;
+
+      const finalPrice = Math.round(p.price * mult);
+      const mrp = Math.round(finalPrice * 1.2);
+
+      // Update slide UI
+      const priceEl = document.getElementById(`price-val-${prodId}`);
+      const unitEl = document.getElementById(`unit-val-${prodId}`);
+      const mrpEl = document.getElementById(`mrp-val-${prodId}`);
+
+      if (priceEl) priceEl.innerText = `₹${finalPrice}`;
+      if (unitEl) unitEl.innerText = `/ ${label}`;
+      if (mrpEl) mrpEl.innerText = `₹${mrp}`;
+
+      // Update chips on slide
+      const slide = document.getElementById(`slide-${prodId}`);
+      if (slide) {
+        slide.querySelectorAll('.pack-opt-btn').forEach(c => {
+          c.classList.toggle('active', c.innerText.trim() === label);
+        });
+      }
+
+      updateStickyRailState();
+    }
+
+    // 5. LIKE & HEART BURST
+    function toggleLike(prodId, event) {
+      if (event) event.stopPropagation();
+      likedProducts[prodId] = !likedProducts[prodId];
+
+      updateStickyRailState();
+
+      if (likedProducts[prodId] && event) {
+        createHeartBurst(event.clientX, event.clientY);
+        showToast("Saved to your Deccan Harvest favorites ❤️");
+      }
+    }
+
+    function createHeartBurst(x, y) {
+      const el = document.createElement('div');
+      el.className = 'heart-burst';
+      el.style.left = `${x}px`;
+      el.style.top = `${y}px`;
+      el.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="#EF4444" width="100%" height="100%">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      `;
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 900);
+    }
+
+    // 6. FRESH BAG / CART OPERATIONS
+    function quickAdd(prodId, event) {
+      if (event) event.stopPropagation();
+      const p = PRODUCTS.find(x => x.id === prodId);
+      if (!p) return;
+
+      const sel = selectedPackPerProduct[prodId] || { label: '250g', mult: 1 };
+      const price = Math.round(p.price * sel.mult);
+
+      addItemToBag(p, sel.label, price, 1);
+    }
+
+    function addItemToBag(product, packLabel, price, qtyToAdd) {
+      const key = `${product.id}-${packLabel}`;
+      const existing = freshBag.find(item => item.key === key);
+
+      if (existing) {
+        existing.qty += qtyToAdd;
+      } else {
+        freshBag.push({
+          key,
+          id: product.id,
+          name: product.name,
+          pack: packLabel,
+          price,
+          qty: qtyToAdd,
+          img: product.img
+        });
+      }
+
+      updateBagBadge();
+      updateStickyRailState();
+      showToast(`Added ${product.name} (${packLabel}) to Fresh Bag 🥗`);
+    }
+
+    function getCartItemQty(prodId, packLabel) {
+      const key = `${prodId}-${packLabel}`;
+      const found = freshBag.find(i => i.key === key);
+      return found ? found.qty : 0;
+    }
+
+    // Sticky Action Rail Synchronizer & Handlers
+    function updateStickyRailState() {
+      if (!currentActiveProductId) return;
+      const p = PRODUCTS.find(x => x.id === currentActiveProductId);
+      if (!p) return;
+
+      const sel = selectedPackPerProduct[p.id] || { label: '250g', mult: 1 };
+      const qty = getCartItemQty(p.id, sel.label);
+
+      const addBtn = document.getElementById('stickyAddBtn');
+      const badge = document.getElementById('stickyRailBadge');
+      if (addBtn && badge) {
+        addBtn.classList.toggle('has-items', qty > 0);
+        badge.innerText = qty;
+      }
+
+      const likeBtn = document.getElementById('stickyLikeBtn');
+      const likeCnt = document.getElementById('stickyLikeCnt');
+      const isLiked = !!likedProducts[p.id];
+      if (likeBtn && likeCnt) {
+        likeBtn.classList.toggle('liked', isLiked);
+        likeCnt.innerText = isLiked ? '143' : '142';
+      }
+    }
+
+    function onStickyAddClick(event) {
+      if (!currentActiveProductId) return;
+      quickAdd(currentActiveProductId, event);
+      updateStickyRailState();
+    }
+
+    function onStickySpecsClick() {
+      if (!currentActiveProductId) return;
+      openAddSheet(currentActiveProductId);
+    }
+
+    function onStickyWaClick() {
+      if (!currentActiveProductId) return;
+      quickProductWhatsApp(currentActiveProductId);
+    }
+
+    function onStickyLikeClick(event) {
+      if (!currentActiveProductId) return;
+      toggleLike(currentActiveProductId, event);
+      updateStickyRailState();
+    }
+
+    function updateBagBadge() {
+      const totalCount = freshBag.reduce((sum, item) => sum + item.qty, 0);
+      const badge = document.getElementById('dockBagCount');
+      const openBagBtn = document.getElementById('openBag');
+
+      if (badge && openBagBtn) {
+        badge.innerText = totalCount;
+        openBagBtn.classList.toggle('has-items', totalCount > 0);
+      }
+    }
+
+    function adjustBagItemQty(key, delta) {
+      const item = freshBag.find(i => i.key === key);
+      if (!item) return;
+
+      item.qty += delta;
+      if (item.qty <= 0) {
+        freshBag = freshBag.filter(i => i.key !== key);
+      }
+
+      updateBagBadge();
+      updateStickyRailState();
+      renderBagItems();
+    }
+
+    function renderBagItems() {
+      const container = document.getElementById('bagItemsContainer');
+      const checkoutForm = document.getElementById('checkoutControls');
+      const grandTotalEl = document.getElementById('bagGrandTotal');
+
+      if (freshBag.length === 0) {
+        container.innerHTML = `
+          <div style="text-align:center;padding:48px 12px;color:#5A6B5E;">
+            <div style="font-size:42px;margin-bottom:8px;">🥗</div>
+            <h4 style="font-size:18px;color:#102F1B;margin-bottom:6px;">Your Fresh Bag is empty</h4>
+            <p style="font-size:13.5px;max-width:28ch;margin:0 auto 18px;">Select any daily fresh-cut vegetables, peeled fruits, or artisanal salad bowls to start.</p>
+            <button onclick="closeBagSheet();goToSlide(1);" style="background:#102F1B;color:#FAF7F2;padding:12px 24px;border-radius:999px;font-weight:700;font-size:13.5px;">
+              Explore Harvest
+            </button>
+          </div>
+        `;
+        if (checkoutForm) checkoutForm.style.display = 'none';
+        return;
+      }
+
+      if (checkoutForm) checkoutForm.style.display = 'block';
+
+      container.innerHTML = freshBag.map(item => `
+        <div class="cart-item-row">
+          <div class="cart-item-info">
+            <img class="cart-item-thumb" src="${item.img}" alt="${item.name}" />
+            <div>
+              <div class="cart-item-name">${item.name}</div>
+              <div class="cart-item-meta">${item.pack} • ₹${item.price} each</div>
+            </div>
+          </div>
+          <div class="qty-stepper">
+            <button class="qty-btn" onclick="adjustBagItemQty('${item.key}', -1)">−</button>
+            <span class="qty-num">${item.qty}</span>
+            <button class="qty-btn" onclick="adjustBagItemQty('${item.key}', 1)">+</button>
+          </div>
+        </div>
+      `).join('');
+
+      const total = freshBag.reduce((sum, item) => sum + (item.price * item.qty), 0);
+      if (grandTotalEl) grandTotalEl.innerText = `₹${total}`;
+    }
+
+    // 7. BOTTOM SHEETS CONTROL (MODALS)
+    let currentCustomisingProductId = null;
+    let sheetPack = { label: '250g', mult: 1 };
+    let sheetQty = 1;
+
+    function openAddSheet(prodId) {
+      const p = PRODUCTS.find(x => x.id === prodId);
+      if (!p) return;
+
+      currentCustomisingProductId = prodId;
+      sheetPack = selectedPackPerProduct[prodId] || { label: '250g', mult: 1 };
+      sheetQty = 1;
+
+      document.getElementById('detailImg').src = p.img;
+      document.getElementById('detailCut').innerText = `${p.cut} • ${p.badge}`;
+      document.getElementById('detailTitle').innerText = p.name;
+      document.getElementById('detailDesc').innerText = p.desc;
+      document.getElementById('sheetQtyVal').innerText = sheetQty;
+
+      updateSheetPricing();
+
+      // Render pack switcher chips in sheet
+      const chipsContainer = document.getElementById('sheetPackChips');
+      chipsContainer.innerHTML = `
+        <button class="pack-opt-btn ${sheetPack.label==='250g'?'active':''}" style="padding:8px 16px;border:1px solid rgba(16,47,27,0.18);" onclick="setSheetPack('250g', 1)">250g Punnet</button>
+        <button class="pack-opt-btn ${sheetPack.label==='500g'?'active':''}" style="padding:8px 16px;border:1px solid rgba(16,47,27,0.18);" onclick="setSheetPack('500g', 1.85)">500g (-8%)</button>
+        <button class="pack-opt-btn ${sheetPack.label==='1kg'?'active':''}" style="padding:8px 16px;border:1px solid rgba(16,47,27,0.18);" onclick="setSheetPack('1kg', 3.5)">1kg Family Pack</button>
+      `;
+
+      document.getElementById('sheetAddConfirmBtn').onclick = () => {
+        const price = Math.round(p.price * sheetPack.mult);
+        addItemToBag(p, sheetPack.label, price, sheetQty);
+        closeAddSheet();
+      };
+
+      openSheet('addSheet');
+    }
+
+    function setSheetPack(label, mult) {
+      sheetPack = { label, mult };
+      document.querySelectorAll('#sheetPackChips .pack-opt-btn').forEach(c => {
+        c.classList.toggle('active', c.innerText.includes(label));
+      });
+      updateSheetPricing();
+    }
+
+    function adjustSheetQty(delta) {
+      sheetQty = Math.max(1, sheetQty + delta);
+      document.getElementById('sheetQtyVal').innerText = sheetQty;
+      updateSheetPricing();
+    }
+
+    function updateSheetPricing() {
+      const p = PRODUCTS.find(x => x.id === currentCustomisingProductId);
+      if (!p) return;
+      const unitPrice = Math.round(p.price * sheetPack.mult);
+      const totalPrice = unitPrice * sheetQty;
+      document.getElementById('detailPrice').innerText = `₹${totalPrice} (${sheetQty} × ₹${unitPrice})`;
+    }
+
+    function closeAddSheet() {
+      closeSheet('addSheet');
+    }
+
+    function openBagSheet() {
+      renderBagItems();
+      openSheet('bagSheet');
+    }
+
+    function closeBagSheet() {
+      closeSheet('bagSheet');
+    }
+
+    function openMenuSheet() {
+      openSheet('menuSheet');
+    }
+
+    function closeMenuSheet() {
+      closeSheet('menuSheet');
+    }
+
+    function openInfoSheet() {
+      openSheet('infoSheet');
+    }
+
+    function closeInfoSheet() {
+      closeSheet('infoSheet');
+    }
+
+    function openSheet(id) {
+      document.getElementById('scrim').classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+
+    function closeSheet(id) {
+      const el = document.getElementById(id);
+      if (el) el.classList.remove('active');
+      if (!document.querySelector('.sheet.active')) {
+        document.getElementById('scrim').classList.remove('active');
+      }
+    }
+
+    function closeAllSheets() {
+      document.querySelectorAll('.sheet').forEach(s => s.classList.remove('active'));
+      document.getElementById('scrim').classList.remove('active');
+    }
+
+    // 8. MENU / CATALOG SHEET LOGIC
+    function renderCatalogSheet(items = PRODUCTS) {
+      const list = document.getElementById('catalogSheetList');
+      if (!list) return;
+
+      list.innerHTML = items.map(p => `
+        <div class="c-card">
+          <img class="c-thumb" src="${p.img}" alt="${p.name}" onclick="closeMenuSheet(); goToSlide(${p.id});" />
+          <div>
+            <div class="c-cut">${p.cut}</div>
+            <div class="c-title" onclick="closeMenuSheet(); goToSlide(${p.id});">${p.name}</div>
+            <div class="c-foot">
+              <span class="c-price">₹${p.price} <small style="font-size:11px;font-weight:600;opacity:0.6;">(250g)</small></span>
+              <button class="c-add-btn" onclick="quickAdd(${p.id}, event)">+ Add</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterMenu(cat, btn) {
+      activeCatalogCat = cat;
+      document.querySelectorAll('.m-pill').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const filtered = cat === 'all' ? PRODUCTS : PRODUCTS.filter(x => x.cat === cat);
+      renderCatalogSheet(filtered);
+    }
+
+    function searchCatalog(query) {
+      const q = query.toLowerCase();
+      const filtered = PRODUCTS.filter(p =>
+        (activeCatalogCat === 'all' || p.cat === activeCatalogCat) &&
+        (p.name.toLowerCase().includes(q) || p.cut.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q))
+      );
+      renderCatalogSheet(filtered);
+    }
+
+    // 9. WHATSAPP CHECKOUT & CONCIERGE INTEGRATION
+    function submitOrderWhatsApp() {
+      if (freshBag.length === 0) {
+        showToast("Your Fresh Bag is empty!");
+        return;
+      }
+
+      const locality = document.getElementById('bagLocalityInput').value;
+      const slot = document.getElementById('bagSlotInput').value;
+      const name = document.getElementById('bagCustName').value || 'Valued Customer';
+      const phone = document.getElementById('bagCustPhone').value || 'Provided in chat';
+      const total = freshBag.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+      let msg = `*New Fresh Order — Deccan Farms Pune*%0A`;
+      msg += `*Name:* ${encodeURIComponent(name)}%0A`;
+      msg += `*Pune Delivery Zone:* ${encodeURIComponent(locality)}%0A`;
+      msg += `*Chilled Slot:* ${encodeURIComponent(slot)}%0A`;
+      msg += `*Contact:* ${encodeURIComponent(phone)}%0A%0A`;
+      msg += `*Today's Harvest Items:*%0A`;
+
+      freshBag.forEach((item, i) => {
+        msg += `${i + 1}. ${encodeURIComponent(item.name)} (${item.pack}) x${item.qty} — ₹${item.price * item.qty}%0A`;
+      });
+
+      msg += `%0A*Total Payable: ₹${total}* (Free Chilled Delivery Across Pune)%0A`;
+      msg += `_Please confirm delivery schedule._`;
+
+      window.open(`https://wa.me/919876543210?text=${msg}`, '_blank');
+    }
+
+    function quickProductWhatsApp(prodId) {
+      const p = PRODUCTS.find(x => x.id === prodId);
+      if (!p) return;
+      const sel = selectedPackPerProduct[prodId] || { label: '250g', mult: 1 };
+      const price = Math.round(p.price * sel.mult);
+      const zone = document.getElementById('puneZoneSelect').value;
+
+      const msg = `Hi Deccan Farms! I would like to order *${encodeURIComponent(p.name)}* (${sel.label} • ₹${price}) for delivery in *${encodeURIComponent(zone)}*, Pune.`;
+      window.open(`https://wa.me/919876543210?text=${msg}`, '_blank');
+    }
+
+    function openWhatsAppConcierge(customMsg) {
+      const zone = document.getElementById('puneZoneSelect').value;
+      const text = customMsg || `Hi Deccan Farms Pune! I'd like to ask about daily fresh-cut veggies & salad deliveries in ${zone}.`;
+      window.open(`https://wa.me/919876543210?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    function submitPrototypeOrder() {
+      if (freshBag.length === 0) return;
+      const zone = document.getElementById('bagLocalityInput').value;
+      freshBag = [];
+      updateBagBadge();
+      updateStickyRailState();
+      closeBagSheet();
+      showToast(`✓ Order Confirmed! Chilled delivery dispatched to ${zone}.`);
+    }
+
+    function onZoneChange(newZone) {
+      showToast(`📍 Pune Delivery Zone updated to ${newZone}`);
+      const bagLoc = document.getElementById('bagLocalityInput');
+      if (bagLoc) bagLoc.value = newZone;
+    }
+
+    function updateTimeSlider(val) {
+      const mealsLabel = document.getElementById('slideMealCountLabel');
+      const hoursLabel = document.getElementById('slideHoursSavedLabel');
+      if (mealsLabel) mealsLabel.innerText = `${val} Home Meals / Week`;
+      if (hoursLabel) hoursLabel.innerText = `${(val * 0.65).toFixed(1)} Hours / wk`;
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      if (!t) return;
+      t.innerText = msg;
+      t.classList.add('show');
+      clearTimeout(window._toastTimeout);
+      window._toastTimeout = setTimeout(() => {
+        t.classList.remove('show');
+      }, 3200);
+    }
+
+    // Run on startup
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
